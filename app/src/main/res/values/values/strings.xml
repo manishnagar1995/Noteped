@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DOTI</string>
+    <string name="action_delete_all">Delete All</string>
+    <string name="save_settings">Save</string>
+    <string name="delete_settings">Delete</string>
+    <string name="task_to_do">Task To Do</string>
+    <string name="change_task">Change Task</string>
+    <string name="delete_dialog_msg">Do you want to delete all TODO Task</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+</resources>

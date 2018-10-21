@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditMessageClass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/boldtext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="B"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/italictext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/boldtext"
+            android:layout_weight="2"
+            android:text="I"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/normaltext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/italictext"
+            android:layout_weight="2"
+            android:text="N"
+            android:textSize="16dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/fontsize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/normaltext"
+            android:layout_weight="5"
+            android:text="Size : 16sp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/copytext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fontsize"
+            android:layout_weight="5"
+            android:text="CopyAll"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/messagebox"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/boldtext"
+        android:layout_weight="10"
+        android:background="#ffffff"
+        android:ems="100"
+        android:gravity="top|left"
+        android:hint="WRITE YOUR MESSAGE....."
+        android:inputType="textMultiLine"
+        android:padding="10dp" />
+</LinearLayout>
